@@ -1241,27 +1241,6 @@
             });
         });
 
-        const contactForm = document.getElementById('contactForm');
-        
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                const formData = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    subject: document.getElementById('subject').value,
-                    message: document.getElementById('message').value
-                };
-
-                console.log('Form submitted:', formData);
-
-                alert('Thank you for your message! I\'ll get back to you soon.');
-                
-                contactForm.reset();
-            });
-        }
-        
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -1365,6 +1344,7 @@
     </script>
 </body>
 </html>
+
 
 
 
